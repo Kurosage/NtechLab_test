@@ -1,0 +1,16 @@
+
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+
+body {
+  background:rgb(59, 63, 59);
+  min-height: 100%;
+
+}
