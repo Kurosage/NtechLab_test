@@ -3,16 +3,16 @@
 <template>
 
     <div class="form" >
-        <label class="form__label label label_name" for="input_name">Имя</label>
+        <label class="form__label label_name" for="input_name">Имя</label>
         <p v-if="isInvalidName" class="form__error error error_name">Поле не может быть пустым</p>
-        <input class="form__input input input_name" type="text" v-model="name" placeholder="Введите имя" min-length="1" :disabled="disabled" required>
+        <input class="form__input input_name" type="text" v-model="name" placeholder="Введите имя" min-length="1" :disabled="disabled" required>
         
-        <label class="form__label label label_age" for="input_age">Возраст</label>
+        <label class="form__label label_age" for="input_age">Возраст</label>
         <p v-if="isInvalidAge" class="form__error error error_age">Введите возраст от 18 до 100 лет</p>
-        <input class="form__input input input_age" type="number" v-model="age" placeholder="Введите возраст" :disabled="disabled" required>
+        <input class="form__input input_age" type="number" v-model="age" placeholder="Введите возраст" :disabled="disabled" required>
         
-        <button class="form__button button button_save" @click="saveInfo" :disabled="disabled">Сохранить</button>
-        <button class="form__button button button_reset" @click="resetInfo" :disabled="disabled">Отменить</button>
+        <button class="form__button button_save" @click="saveInfo" :disabled="disabled">Сохранить</button>
+        <button class="form__button button_reset" @click="resetInfo" :disabled="disabled">Отменить</button>
     </div>
     
 </template>
@@ -77,12 +77,12 @@
     flex-direction: column;
     gap:10px;
 }
-.input{
+input{
     height: 20px;
     border-radius:inherit;
     border: 0;
 }
-.button{
+button{
     border-radius:inherit;
     height: 20px;
     width: 50%;
@@ -95,7 +95,7 @@
 .button_reset{
     background-color: rgb(233, 85, 85);
 }
-.label{
+label{
     font-size: 20px;
     font-weight: bold;
 }
