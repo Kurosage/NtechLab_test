@@ -1,2 +1,2 @@
 # NtechLab_test
-![gif](./src/assets/readmeGif.gif)
+![gif](/test_task/src/assets/readmeGif.gif)
